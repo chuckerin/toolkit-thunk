@@ -5,7 +5,9 @@ import type { RootState } from '../app/store'; // adjust path to your store file
 
 const PrivateRouter = () => {
   const { user } = useSelector((state: RootState) => state.auth);
-  return <div>{user ? <Outlet /> : <Navigate to='/login' />}</div>;
+  return (
+    <div>{user ? <Outlet /> : <Navigate to='/toolkit-thunk/login' />}</div>
+  );
 };
 
 export default PrivateRouter;
