@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = (ev: React.SubmitEvent<HTMLFormElement>) => {
     ev.preventDefault();
     dispatch(setUser({ email, password }));
-    navigate('/');
+    navigate('/toolkit-thunk/');
     setEmail('');
     setPassword('');
   };

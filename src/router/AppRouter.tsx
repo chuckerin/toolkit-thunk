@@ -11,10 +11,10 @@ const AppRouter = () => {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<PrivateRouter />}>
-            <Route path='' element={<News />} />
+          <Route path='/toolkit-thunk/' element={<PrivateRouter />}>
+            <Route path='/toolkit-thunk/' element={<News />} />
           </Route>
-          <Route path='login' element={<Login />} />
+          <Route path='/toolkit-thunk/login' element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>

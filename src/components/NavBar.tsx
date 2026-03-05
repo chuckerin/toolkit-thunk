@@ -20,7 +20,7 @@ const NavBar = () => {
 
   const handleLogout = () => {
     dispatch(clearUser());
-    navigate('/login');
+    navigate('/toolkit-thunk/login');
   };
 
   return (
@@ -29,7 +29,11 @@ const NavBar = () => {
       <p>{user?.email}</p>
       <div className={styles.buttonWrapper}>
         {user?.email && <button onClick={handleLogout}>Logout</button>}
-        {!user && <button onClick={() => navigate('/login')}>Login</button>}
+        {!user && (
+          <button onClick={() => navigate('/toolkit-thunk/login')}>
+            Login
+          </button>
+        )}
       </div>
     </div>
   );
