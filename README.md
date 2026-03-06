@@ -1,3 +1,15 @@
+# News Site that implements React Router and Redux Toolkit
+
+This code was converted from Javacritpt to Typescript for the following course, [Typescript & React JS Course with React & Typescript Project](C:\repos\react\typescript\ts-n-react-js-course). The [lesson](https://www.udemy.com/course/typescript-react-js-course-with-react-typescript-project/learn/lecture/42629470/?udfrontends=true) uses Redux Toolkit, React Router, and Thunk. It's a simple little movie site that demonstrates the usage of those tools.
+
+## Project tools
+
+- [Typscript](https://www.typescriptlang.org/) - Primary language
+- [React](https://react.dev/) - UI Library
+- [Vite](https://vite.dev/) - Build tool
+- [React Router](https://reactrouter.com/) - Build tool
+- [Redux](https://redux.js.org/) - Legacy State Management
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -40,15 +52,15 @@ export default defineConfig([
       // other options...
     },
   },
-])
+]);
 ```
 
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
 // eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+import reactX from 'eslint-plugin-react-x';
+import reactDom from 'eslint-plugin-react-dom';
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -69,5 +81,5 @@ export default defineConfig([
       // other options...
     },
   },
-])
+]);
 ```
